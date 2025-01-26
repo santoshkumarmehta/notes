@@ -1,0 +1,11 @@
+
+Steps for adding project in github
+====================================
+step 1: git init
+step 2:  git branch -r (check list of branch exist)
+step 3:  git checkout -b main (if no branch is there can create new branch as main)
+step 4: git add
+step 5: git status
+step 6: git commit -m "Your commit message"
+step 7:  git push -u origin main
+ 
