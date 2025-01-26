@@ -1,0 +1,17 @@
+kafka command
+===============================
+Start Zookeeper Server -> C:\kafka\bin\windows\zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
+
+Start Kafka Server - > C:\kafka\bin\windows\kafka-server-start.bat C:\kafka\config\server.properties
+
+Create topic -> C:\kafka\bin\windows>kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-topic
+
+Showing list of Topics -> kafka-topics.bat --list --bootstrap-server localhost:9092
+
+Getting details of Topics - > kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic test-topic
+
+Produce message to a Topics -> kafka-console-producer.bat --broker-list localhost:9092 --topic test-topic
+
+Consume message to a Topics -> kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic
+
+From Beginning -> kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic --from-beginning
